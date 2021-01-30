@@ -1,0 +1,74 @@
+@use './_header.scss';
+
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+$primaryStrong: hsl(171, 66%, 44%);
+$primaryLight: hsl(233, 100%, 69%);
+$darkFont: hsl(210, 10%, 33%);
+$lightFont: hsl(201, 11%, 66%);
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 400;
+  position: relative;
+}
+
+header {
+  .logo {
+    position: absolute;
+    left: 46%;
+    top: 150px;
+  }
+}
+
+.head-elements {
+  width: 50%;
+  height: 40vh;
+  margin: auto;
+  text-align: center;
+
+  h1 {
+    color: $darkFont;
+  }
+
+  p {
+    color: $lightFont;
+    width: 500px;
+    margin-left: 115px;
+    margin-top: 15px;
+  }
+
+  button {
+    margin: 50px 25px;
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 25px;
+    border: none;
+  }
+  .btn-ios {
+    background-color: $primaryStrong;
+    box-shadow: 3px 3px 3px rgba($color: hsl(171, 66%, 44%), $alpha: 0.6);
+  }
+
+  .btn-mac {
+    background-color: $primaryLight;
+    box-shadow: 3px 3px 3px rgba($color: $primaryLight, $alpha: 0.6);
+  }
+  .btn-ios:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+    font-size: 20px;
+  }
+  .btn-mac:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+    font-size: 20px;
+  }
+}

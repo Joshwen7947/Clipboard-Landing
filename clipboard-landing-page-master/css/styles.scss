@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+$primaryStrong: hsl(171, 66%, 44%);
+$primaryLight: hsl(233, 100%, 69%);
+$darkFont: hsl(210, 10%, 33%);
+$lightFont: hsl(201, 11%, 66%);
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 400;
+  position: relative;
+  overflow-x: hidden;
+}
+
+header {
+  .logo {
+    position: absolute;
+    left: 46%;
+    top: 150px;
+  }
+}
+
+.head-elements {
+  width: 50%;
+  height: 40vh;
+  margin: auto;
+  text-align: center;
+
+  h1 {
+    color: $darkFont;
+  }
+
+  p {
+    color: $lightFont;
+    width: 500px;
+    margin-left: 115px;
+    margin-top: 15px;
+  }
+
+  button {
+    margin: 50px 25px;
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 25px;
+    border: none;
+  }
+  .btn-ios {
+    background-color: $primaryStrong;
+    box-shadow: 3px 3px 3px rgba($color: hsl(171, 66%, 44%), $alpha: 0.6);
+  }
+
+  .btn-mac {
+    background-color: $primaryLight;
+    box-shadow: 3px 3px 3px rgba($color: $primaryLight, $alpha: 0.6);
+  }
+  .btn-ios:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+    font-size: 20px;
+  }
+  .btn-mac:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+    font-size: 20px;
+  }
+}
+
+.div1 {
+  text-align: center;
+  h1 {
+    color: $darkFont;
+    margin: 25px;
+  }
+  p {
+    color: $lightFont;
+    width: 500px;
+    margin-left: 32.5%;
+  }
+}
+
+.computer {
+  img {
+    float: left;
+    margin-left: -50px;
+    margin-top: 50px;
+  }
+  .parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    float: right;
+    padding: 50px 150px 0 50px;
+    width: 350px;
+    h3 {
+      font-size: 2rem;
+      color: $darkFont;
+      padding: 50px 0 0 0;
+    }
+    p {
+      padding-bottom: 50px;
+    }
+  }
+}
+
+.access {
+  position: absolute;
+  top: 1550px;
+  // background-color: blue;
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  padding: 50px;
+  h1 {
+    color: $darkFont;
+  }
+  p {
+    width: 500px;
+    color: $lightFont;
+    margin: auto;
+    padding: 15px 0 100px 0;
+  }
+}
+
+.supercharge {
+  width: 100%;
+  height: 550px;
+  text-align: center;
+  position: absolute;
+  top: 2450px;
+  h1 {
+    color: $darkFont;
+    padding: 25px;
+  }
+  p {
+    color: $lightFont;
+    padding: 5px;
+  }
+  .p {
+    color: $lightFont;
+    padding-bottom: 100px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: absolute;
+    padding: 50px;
+    #force {
+      width: 375px;
+      margin-left: 35px;
+    }
+  }
+
+  img {
+    padding-bottom: 25px;
+  }
+}
+
+.logos {
+  position: absolute;
+  top: 3000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  img {
+    padding: 50px;
+    transform: scale(1.25);
+    margin-left: 80px;
+  }
+}
+
+.cta {
+  width: 100%;
+  position: absolute;
+  top: 3400px;
+  text-align: center;
+  h1 {
+    color: $darkFont;
+  }
+  p {
+    color: $lightFont;
+    padding-top: 25px;
+  }
+  button {
+    margin: 50px 25px;
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 25px;
+    border: none;
+  }
+  .btm-btn-ios {
+    background-color: $primaryStrong;
+    box-shadow: 3px 3px 3px rgba($color: hsl(171, 66%, 44%), $alpha: 0.6);
+  }
+  .btm-btn-mac {
+    background-color: $primaryLight;
+    box-shadow: 3px 3px 3px rgba($color: $primaryLight, $alpha: 0.6);
+  }
+  .btm-btn-ios:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+    font-size: 20px;
+  }
+  .btm-btn-mac:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+    font-size: 20px;
+  }
+}
+
+footer {
+  background-color: hsl(201, 11%, 66%);
+  height: 150px;
+  width: 100%;
+  position: absolute;
+  top: 3700px;
+  .btm-logo {
+    float: left;
+    transform: scale(0.8);
+    position: relative;
+    top: 15px;
+    left: 15px;
+  }
+  .social-media {
+    display: flex;
+    float: right;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+  }
+  .fb {
+    padding: 20px;
+  }
+  .insta {
+    padding: 20px;
+  }
+  .twitter {
+    padding: 20px;
+  }
+  .fb:hover {
+    transform: scale(1.25);
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  .insta:hover {
+    transform: scale(1.25);
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  .twitter:hover {
+    transform: scale(1.25);
+    transition: 0.2s;
+    cursor: pointer;
+  }
+
+  .footer-menu {
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-gap: 25px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 35px;
+    right: 50px;
+  }
+}
